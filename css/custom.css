@@ -1,0 +1,73 @@
+.fz-12{
+    font-size: 12px;
+}
+.fz-16{
+    font-size: 16px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-25{
+    font-size: 25px;
+}
+.fz-30{
+    font-size: 30px;
+}
+.fz-70{
+    font-size: 70px;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-800{
+    font-weight: 800;
+}
+.t-gray{
+    color: #ffffff66;
+}
+.bg-gray{
+    background-color: #333;
+    border-radius: 7px;
+}
+.p-30{
+    padding: 30px;
+}
+.btn{
+    background-color: #bac964;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    padding: 8px 24px;
+  }
+  .btn-md{
+    background-color: #bac964;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    padding: 16px 24px;
+  }
+  input , textarea{
+    width: 100%;
+    font-size: 16px;
+    background-color: #333;
+    padding: 16px 24px;
+    border-radius: .25rem;
+    border: none;
+    margin: 8px 0;
+  }
+  .py-80{
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  #logo h1{
+      font-size: 30px;
+  }
+  @media(min-width:720px){
+    #logo h1{
+        font-size: 70px;
+    }
+  }

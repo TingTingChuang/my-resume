@@ -1,0 +1,7 @@
+jQuery
+
+4.scroll.html滑動頁面
+6.go top按鈕
+11.scroll時,Nav字會變色
+12.scroll到下方,Nav縮小變色
+13.wow.js滑動才有效果
