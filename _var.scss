@@ -1,0 +1,34 @@
+$colors:(
+    red:#ff0055,
+    green:#bac964,
+    blue:#2c3e50,
+    yellow:#ffff00,
+    orange:#ffbb00,
+    purple:#7b00ce,
+    dark:#222,
+    light:#e0e0e0,
+    white:rgba(255, 255, 255, 0.5),
+
+);
+$breakpoints:(
+    all:0,
+    sm:480px,
+    md:720px,
+    lg:960px,
+    xl:1200px
+);
+$en:"Segoe UI";
+$tc: "Microsoft Jhenghei";
+$grid:12;
+$spacing: 5px;
+$displays: inline block inline-block flex grid table table-cell;
+$justifyContent: flex-start flex-end center space-between space-around;
+$alignItems:flex-start flex-end center strech;
+$aligns:left center right justify;
+$directions: (
+    left: l,
+    right: r,
+    top: t,
+    bottom: b
+);
+$positions: static relative absolute fixed sticky;

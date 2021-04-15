@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <style>
+        header{
+            height: 800px;
+            background: no-repeat center center url("girl.jpg");
+            background-size: cover;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: .5s;
+        }
+        nav.active{
+            height: 50px;
+            background-color: #fff;
+        }
+        nav.active a{
+            color: #222;
+        }
+        nav a{
+            margin-left: 20px;
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a.active{
+            color:#bac964;
+        }
+        @media(min-width:720px){
+            nav{
+                flex-direction: row;
+            }
+        }
+        #HOME{
+            position: absolute;
+            justify-content: center;
+            text-align: center;
+            top: 280px;
+        }
+        img{
+            width: 100%;
+        }
+        .info-item i{
+            width: 50px;
+            height: 50px;
+            background-color:#ffffff66;
+            text-align: center;
+            line-height: 50px;
+            clip-path: circle();
+            margin: 0 5px;
+        }
+        #works h2{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+        footer .row{
+            justify-content: center;
+        }
+        #gotop{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            background-color: #bac964;
+            color: #fff;
+            text-decoration: none;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: none;
+        }
+        [class^="col"]{
+                padding: 10px;
+        }
+        .tab-nav a{
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #aaa;
+        }
+        .tab-panel{
+            display: none;
+        }
+        .tab-panel.active{
+            display: flex;
+        }
+        .tab-link.active{
+            color: #bac964;
+        }
+    </style>
+</head>
+<body class="bg-dark t-light">
+    <header class="full-width">
+        <nav>
+            <a href="#" data-target="#HOME" class="active">HOME</a>
+            <a href="#" data-target="#PORTFOLIO">PORTFOLIO</a>
+            <a href="#" data-target="#RESUME">RESUME</a>
+            <a href="#" data-target="#ABOUT">ABOUT</a>
+            <a href="#" data-target="#CONTACT">CONTACT</a>
+        </nav>
+        <div id="HOME" class="full-width row">
+            <div class="col-6 fz-30 fw-200">
+                <h1>Hello,im <span class="fw-800 d-block pb-5">Ting Ting Chuang</span></h1>
+                <span class="fw-800 d-block fz-16 t-gray" style="letter-spacing: .2rem;">AND THIS IS MY RESUME</span>
+            </div>
+        </div>
+    </header>
+    <div id="PORTFOLIO" class="fixed-width row t-center py-80">
+        <div class="col-12">
+            <div class="fw-200 fz-30 pb-6">Featured <span class="fw-800">Portfolio</span></div>
+        </div>
+        <div class="fixed-width">
+            <div class="tab-nav row jc-center">
+                <a href="#tab-1" class="tab-link active">網頁</a>
+                <a href="#tab-2" class="tab-link">平面</a>
+            </div>
+        </div>
+        <div id="tab-1" class="fixed-width row tab-panel active">
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/五百戶科技.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">五百戶科技</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/植物園.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">植物園</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/富蘭克霖英語_修.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">富蘭克霖語言中心</div>
+            </div>
+        </div>
+        <div id="tab-2" class="fixed-width row tab-panel">
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/公共營業場所.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">國泰火災健檢手冊</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/喜療復_修.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">喜療復除疤凝膠</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="pb-4" src="/善存_修.jpg" alt="">
+                <div class="fw-200 fz-20 mb-sm-4">善存購物袋</div>
+            </div>
+        </div>
+    </div>
+    <div id="RESUME" class="fixed-width row py-80">
+        <div class="col-12 t-center">
+            <div class="fw-200 fz-30 pb-6">My <span class="fw-800">Resume</span></div>
+            <div class="fz-25 fw-200 pb-9">Education And Experience</div>
+        </div>
+        <div class="col-md-6 col-sm-12 px-3">
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Aug. 2020 - Jan. 2021</span>
+                <span class="t-green fz-20 d-block pb-1">進修</span>
+                <span class="t-gray">跨平台商業網站設計</span>
+                <div class="t-gray pb-2"><li>HTML、CSS、JavaScript、jQuery</li><li>RWD 響應式網頁設計</li><li>Vue.js</li><li>Bootstrap 前端框架</li><li>CSS 預處理器 Sass/SCSS</li></div>
+                <span class="t-gray">使用者介面設計</span>
+                <div class="t-gray pb-2"><li>網頁介面設計</li><li>APP 介面設計</li><li>製作 Wireframe、Flowchart、Prototype</li><li>IOS & Android UI Design Guideline</li></div>
+                <div class="t-gray">聯成電腦</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Oct. 2019 - Jun. 2020</span>
+                <span class="t-green fz-20 d-block pb-1">平面設計/美編人員</span>
+                <div class="t-gray pb-2">餐飲業，餐廳經營跨足日式丼飯和台式炭烤吐司，使用高品質食材，提供消費者滿意的餐點。工作內容為 FB 粉絲團、IG、Google 商家經營與互動、餐廳文宣、 CI 設計、協助行銷活動與執行。</div>
+                <div class="t-gray">滿邑股份有限公司</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Dec. 2017 - Sep. 2018</span>
+                <span class="t-green fz-20 d-block pb-1">平面設計</span>
+                <div class="t-gray pb-2">主要服務為博物館策展，透過 VR 實境與多媒體互動，所製展覽成為台北市政府觀光傳播局之典範。工作內容為展場平面製作物、製作簡報與準備資料、配合展覽佈展、卸展。</div>
+                <div class="t-gray">西米創意股份有限公司</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Dec. 2016 - Mar. 2017</span>
+                <span class="t-green fz-20 d-block pb-1">平面設計/美編人員</span>
+                <div class="t-gray pb-2">國際性基督教社會服務機構，服務項目有兒童青少年營隊、非營利幼兒園、婦女暨家庭服務中心、成人進修等。工作內容為活動文宣、講座 DM 、海報、會刊封面設計、官網更新與 FB 粉絲團經營。</div>
+                <div class="t-gray">台北基督教女青年會</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 px-3">
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> May. 2014 - May. 2016</span>
+                <span class="t-green fz-20 d-block pb-1">平面設計/美編人員</span>
+                <div class="t-gray pb-2">旅遊服務業，營運據點包含台北總公司及12家分公司。工作內容為官網行程特色、活動專頁、旅展相關製作物設計。</div>
+                <div class="t-gray">百威旅遊</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Jan. 2014 - May. 2014</span>
+                <span class="t-green fz-20 d-block pb-1">平面設計</span>
+                <div class="t-gray pb-2">功能性紡織品企業，商品有紡織品 OEM 、 ODM 、醫療、美容耗材和自創品牌棉花共和國。工作內容為官網 Banner 製作、圖片編修、美容耗材包裝設計。</div>
+                <div class="t-gray">大傑有限公司</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Mar. 2013 - Sep. 2013</span>
+                <span class="t-green fz-20 d-block pb-1">設計師</span>
+                <div class="t-gray pb-2">結合設計與行銷策略的公司，提供國際、本土客戶建立品牌、設計與行銷的服務。工作內容為陳列輔助物、手冊、插畫與 Logo 設計。</div>
+                <div class="t-gray">好應整合行銷股份有限公司</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Jul. 2010 - Jul. 2012</span>
+                <span class="t-green fz-20 d-block pb-1">網頁設計師</span>
+                <div class="t-gray pb-2">全方位客製化軟體開發服務，提供國內外客戶資訊需求整合解決方案。工作內容為網頁視覺、系統介面、公司 CI 設計，與工程師共同執行專案。</div>
+                <div class="t-gray">五百戶科技股份有限公司</div>
+            </div>
+            <div class="bg-gray p-30 mb-sm-9">
+                <span class="t-white fz-12 fw-800 d-block pb-1"><i class="far fa-calendar-minus"></i> Sep. 2005 - Jun. 2008</span>
+                <span class="t-green fz-20 d-block pb-1">大學</span>
+                <div class="t-gray pb-2">數位媒體設計學系。</div>
+                <div class="t-gray">銘傳大學</div>
+            </div>
+        </div>
+    </div>
+    <div id="ABOUT" class="fixed-width row py-80">
+        <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+            <img src="person.jpg" alt="">
+        </div>
+        <div class="col-lg-4 pl-lg-5">
+            <div class="fw-200 fz-30 pb-6">About <span class="fw-800">Me</span></div>
+            <div class="t-gray mb-9">個性樂觀開朗，喜愛團體活動、學習新事物。大學就讀數位媒體設計系。畢業後在科技、整合行銷、旅行社等公司擔任設計。投入使用者介面設計學習，希望能設計出對使用者來說更便利、友善的產品。也學習了前端技術，希望能創造更多商業價值。</div>
+            <button type="button" class="btn">DOWNLOAD CV</button>
+        </div>
+    </div>
+    <div id="CONTACT" class="fixed-width row py-80">
+        <div class="col-12 t-center">
+            <div class="fw-200 fz-30 pb-6">Get <span class="fw-800">In Touch</span></div>
+        </div>
+        <div class="col-md-6 col-sm-12 px-3">
+            <div class="fz-25 fw-200 pb-9">get in touch</div>
+            <div><input type="text" placeholder="Your Name"></div>
+            <div><input type="email" placeholder="Your Email"></div>
+            <div><input type="number" placeholder="Your Phone"></div>
+            <div><textarea name="subject" placeholder="Write a Message" cols="70" rows="10"></textarea></div>
+            <button type="button" class="btn-md pb-sm-9">SEND MESSAGE</button>
+        </div>
+        <div class="col-md-6 col-sm-12" style="padding: 0 15px 0 48px;">
+            <div class="fz-25 fw-200 pb-9">my contact details</div>
+                <div class="t-blue d-block pb-1">EMAIL</div>
+                <div class="t-gray pb-4">cute12202001@gmail.com</div>
+                <div class="t-blue d-block pb-1">PHONE</div>
+                <div class="t-gray">0922-181-211</div>
+        </div>
+    </div>
+    <footer>
+        <div class="fixed-width row">
+            <div class="col-12">
+                <div class="t-gray pb-9">Copyright © 2021 All rights reserved | This template is made with by <span class="t-green">TingTing</span></div>
+            </div>
+            <div class="col-12 info-item t-green">
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="gotop">gotop</a>
+    <script>
+        $(function(){
+            $('nav').find('a').click(function(){
+                let target = $(this).data('target');
+                // console.log(target);
+                let offset = $(target).offset().top;
+                // console.log(offset);
+                $('html,body').animate({
+                    scrollTop:offset
+                })
+            });
+            $('#gotop').click(function(){
+                $('html,body').animate({
+                    scrollTop:0
+                })
+            })
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                // console.log(h);
+                if(h >600){
+                    $('#gotop').show();
+                    $('nav').addClass('active');
+                }else{
+                    $('#gotop').hide();
+                    $('nav').removeClass('active');
+                }
+                $('nav').find('a').each(function(){
+                    let target = $(this).data('target');
+                    let offset = $(target).offset().top;
+                    if(h >= offset-200){
+                        $('nav').find('a').removeClass('active')
+                        $(this).addClass('active')
+                    }
+                })
+            })
+        })
+        new WOW().init();
+        let tabLinks = document.querySelectorAll('.tab-link');
+        // console.log(tabLinks);
+        for(let tabLink of tabLinks){
+            // console.log(tabLink);
+            tabLink.onclick = function(){
+                for(let tabLink of tabLinks){
+                    tabLink.classList.remove('active');
+                }
+                this.classList.add('active');
+                let panels = document.querySelectorAll('.tab-panel');
+                let href = this.getAttribute('href');
+                for(let panel of panels){
+                    if(href === '#'+ panel.id){
+                        panel.classList.add('active');
+                    }else{
+                        panel.classList.remove('active');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
